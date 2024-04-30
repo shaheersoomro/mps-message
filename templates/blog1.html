@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>MSP LAW ASSOCIATES</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{{ url_for('static', filename='img/favicon.png') }}" rel="icon">
+  <link href="{{ url_for('static', filename='img/apple-touch-icon.jpg') }}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <!-- Vendor CSS Files -->
+  <link href="{{ url_for('static', filename='vendor/aos/aos.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+
+  <!-- Template Main CSS File -->
+
+  <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+
+  <style>
+    #hero {
+      background-image: url('static/img/back.jpg') !important;
+    }
+
+    .blog {
+      padding: 20px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .blog img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      /* Add spacing below the image */
+    }
+
+    .blog-info h4 {
+      margin-bottom: 5px;
+      /* Add spacing below the title */
+    }
+
+    .blog-info p {
+      color: #fff;
+      /* Set paragraph color */
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <!--<h1 class="logo me-auto"><a href="index.html">MSP LAW ASSOCIATES</a></h1>-->
+      <!-- Uncomment below if you prefer to use an image logo -->
+
+      <a href="/" class="logo me-auto"><img src="{{ url_for('static', filename='img/logo.PNG') }}" width=100px
+          height=100px alt="" class="img-fluid"></a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="/#about">About</a></li>
+          <li class="dropdown"><a class="nav-link scrollto" href="/#practiceAreas"><span>Practice Areas</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#pa1Modal">Corporate and Commercial Laws</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#pa2Modal">Intellectual Property Law</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#pa3Modal">Real Estate and Property Law</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#pa4Modal">Corporate Litigation and Dispute
+                  Resolution</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#pa5Modal">Banking and Finance Law</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#pa6Modal">Taxation Law</a></li>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#pa7Modal"> Family and Inheritance Law</a></li>
+            </ul>
+          </li>
+
+          <li><a class="nav-link   scrollto" href="/#career">Careers</a></li>
+          <li><a class="nav-link scrollto" href="/#lawsnlink">Laws &amp; Links</a></li>
+          <li><a class="nav-link scrollto" href="/blogs">Blogs</a></li>
+
+
+          <li><a class="nav-link scrollto" href="/#contact">Contact</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+
+
+
+
+  </header><!-- End Header -->
+  <div class="modal fade" id="pa1Modal" tabindex="-1" aria-labelledby="pa1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 style="color:#fff;" class="modal-title" id="pa1ModalLabel">Practice Areas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="card bg-dark" id="aaa">
+            <div class="card-body bg-dark">
+              <div class="row content">
+
+                <div class="col-lg-12">
+                  <h5 style="color:#fff;">1. Corporate and Commercial Laws</h5>
+                  <img src="{{ url_for('static', filename='img/c&c.jpg') }}" width="100%" alt="IP Image">
+                  <p style="color:#fff;">Our firm provides strategic counsel and representation to corporations,
+                    startups, and entrepreneurs across all aspects of corporate and commercial law, including:</p>
+                  <ul>
+                    <li style="color:#fff;"> Formation and
+                      structuring of corporate entities</li>
+                    <li style="color:#fff;"> Corporate
+                      governance and compliance</li>
+                    <li style="color:#fff;"> Contract drafting,
+                      negotiation, and review</li>
+                    <li style="color:#fff;"> Mergers,
+                      acquisitions, and corporate restructuring</li>
+                    <li style="color:#fff;"> Joint ventures and
+                      strategic partnerships</li>
+                    <li style="color:#fff;"> Corporate finance
+                      and securities offerings.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pa2Modal" tabindex="-1" aria-labelledby="pa2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 style="color:#fff;" class="modal-title" id="pa2ModalLabel">Practice Areas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="card bg-dark" id="bbb">
+            <div class="card-body">
+              <div class="row content">
+
+                <div class="col-lg-12">
+                  <h5 style="color:#fff">2. Intellectual Property Law</h5>
+                  <img src="{{ url_for('static', filename='img/IP-Law.jpg') }}" width="100%" alt="IP Image">
+                  <p style="color:#fff">MSP Law Associates is dedicated to safeguarding the intellectual property rights
+                    of our clients. Our services in this area include:</p>
+                  <ul>
+                    <li style="color:#fff;"> Copyright
+                      registration and protection</li>
+                    <li style="color:#fff;"> Patent application
+                      and prosecution</li>
+                    <li style="color:#fff;"> Trademark
+                      registration and enforcement</li>
+                    <li style="color:#fff;"> Trade secret
+                      protection</li>
+                    <li style="color:#fff;"> Licensing
+                      agreements and technology transfers</li>
+                    <li style="color:#fff;"> Intellectual
+                      property litigation and dispute resolution.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pa3Modal" tabindex="-1" aria-labelledby="pa3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 style="color:#fff;" class="modal-title" id="pa3ModalLabel">Practice Areas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="card bg-dark" id="ccc">
+            <div class="card-body">
+              <div class="row content">
+                <div class="col-lg-12">
+                  <h5 style="color:#fff;">3. Real Estate and Property Law</h5>
+
+                  <img src="{{ url_for('static', filename='img/rpl.jpeg') }}" width="100%" alt="IP Image">
+
+                  <p style="color:#fff;">We offer comprehensive legal assistance in matters related to real estate and
+                    property law, including:</p>
+                  <ul>
+                    <li style="color:#fff;"> Property
+                      acquisitions and due diligence</li>
+                    <li style="color:#fff;"> Title
+                      investigations and property document review</li>
+                    <li style="color:#fff;"> Lease agreements
+                      and property management</li>
+                    <li style="color:#fff;"> Land development
+                      and zoning issues</li>
+                    <li style="color:#fff;"> Real estate
+                      financing and transactions</li>
+                    <li style="color:#fff;"> Property disputes
+                      and litigation.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pa4Modal" tabindex="-1" aria-labelledby="pa4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 style="color:#fff;" class="modal-title" id="pa4ModalLabel">Practice Areas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="card bg-dark" id="ddd">
+            <div class="card-body">
+              <div class="row content">
+
+                <div class="col-lg-12">
+                  <h5 style="color:#fff;">4. Corporate Litigation and Dispute Resolution</h5>
+                  <img src="{{ url_for('static', filename='img/dpr.jpeg') }}" width="100%" alt="IP Image">
+                  <p style="color:#fff;">Our skilled litigators are prepared to represent clients in a wide range of
+                    civil and commercial disputes, including:</p>
+                  <ul>
+                    <li style="color:#fff;"> Contract disputes
+                      and breach of contract claims</li>
+                    <li style="color:#fff;"> Shareholder
+                      disputes and corporate governance matters</li>
+                    <li style="color:#fff;"> Employment disputes
+                      and labor law issues</li>
+                    <li style="color:#fff;"> Regulatory
+                      compliance and enforcement actions</li>
+                    <li style="color:#fff;" Arbitration, mediation, and alternative dispute resolution</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pa5Modal" tabindex="-1" aria-labelledby="pa5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 style="color:#fff;" class="modal-title" id="pa5ModalLabel">Practice Areas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="card bg-dark" id="eee">
+            <div class="card-body">
+              <div class="row content">
+                <div class="col-lg-12">
+                  <h5 style="color:#fff;">5. Banking and Finance Law</h5>
+                  <img src="{{ url_for('static', filename='img/bf.jpg') }}" width="100%" alt="IP Image">
+                  <p style="color:#fff;">MSP Law Associates provides comprehensive legal counsel to financial
+                    institutions, lenders, borrowers, and investors in matters involving:</p>
+                  <ul>
+                    <li style="color:#fff;"> Banking regulations
+                      and compliance</li>
+                    <li style="color:#fff;"> Loan documentation
+                      and syndicated lending</li>
+                    <li style="color:#fff;"> Debt restructuring
+                      and insolvency proceedings</li>
+                    <li style="color:#fff;"> Securities
+                      offerings and capital markets transactions</li>
+                    <li style="color:#fff;"> Financial
+                      regulatory investigations and enforcement actions</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pa6Modal" tabindex="-1" aria-labelledby="pa6ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 style="color:#fff;" class="modal-title" id="pa6ModalLabel">Practice Areas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="card bg-dark" id="fff">
+            <div class="card-body">
+              <div class="row content">
+
+                <div class="col-lg-12">
+                  <h5 style="color:#fff;">6. Taxation Law and Federal Board of Revenue Matters</h5>
+                  <img src="{{ url_for('static', filename='img/fbr.png') }}" width="100%" alt="IP Image">
+                  <p style="color:#fff;">Our firm offers expert guidance on matters related to taxation law and
+                    representation before the Federal Board of Revenue, including:</p>
+                  <ul>
+                    <li style="color:#fff;"> Tax planning and
+                      compliance</li>
+                    <li style="color:#fff;"> Tax audits and
+                      investigations</li>
+                    <li style="color:#fff;"> Corporate and
+                      individual tax matters</li>
+                    <li style="color:#fff;"> Appeals and
+                      litigation before tax authorities</li>
+                    <li style="color:#fff;"> Advising on tax
+                      implications of business transactions</li>
+                    <li style="color:#fff;"><i class="ri-check-double-line" style="color:#fff;"></i> Representation in
+                      matters before the Federal Board of Revenue.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="pa7Modal" tabindex="-1" aria-labelledby="pa7ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-dark">
+          <h5 style="color:#fff;" class="modal-title" id="pa7ModalLabel">Practice Areas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark">
+          <div class="card bg-dark" id="ggg">
+            <div class="card-body">
+              <div class="row content">
+                <div class="col-lg-12">
+                  <h5 style="color:#fff;">7. Family and Inheritance Law</h5>
+                  <img src="{{ url_for('static', filename='img/il.jpg') }}" width="100%" alt="IP Image">
+                  <p style="color:#fff;">Our firm offers compassionate guidance and advocacy in matters related to
+                    family law and inheritance, including:</p>
+                  <ul>
+                    <li style="color:#fff;"> Divorce and
+                      separation agreements</li>
+                    <li style="color:#fff;"> Child custody and
+                      visitation rights</li>
+                    <li style="color:#fff;"> Spousal support and
+                      alimony</li>
+                    <li style="color:#fff;"> Adoption and
+                      guardianship proceedings</li>
+                    <li style="color:#fff;"> Wills, trusts, and
+                      estate planning</li>
+                    <li style="color:#fff;"> Probate and
+                      administration of estates.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer bg-dark">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1"
+          data-aos="fade-up" data-aos-delay="200">
+          <br>
+          <br>
+          <br>
+          <!--<span style="color:#b99566; font-size: xx-large; font-weight: bolder;">Welcome to MSP Law Associates</span>-->
+          <div class="hero-title">
+            <h1>Insights into Pakistan's 7E Tax: Understanding Property Income</h1>
+          </div>
+          <p>Section 7E of the Income Tax Ordinance, 2001, introduced via the Finance Act of 2022, mandates taxation on
+            deemed income stemming from immovable property located within Pakistan. Herein lies an extensive exploration
+            of its nuances and implications.</p>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#blogs" class="btn btn-get-started scrollto">Get Started</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Clients Section ======= -->
+
+    <!-- ======= Blogs Section ======= -->
+    <section id="blogs" class="team bg-dark">
+      <div class="container" data-aos="fade-up">
+
+
+
+        <div class="row" id="contentRow">
+
+
+          <div class="col-lg-12 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+            <div class="blog d-flex align-items-start bg-dark">
+              <div class="blog-info">
+                <div id="blog1" class="cover">
+
+                </div>
+
+                <h2>Deciphering the 7E Tax: An In-Depth Guide to Deemed Income on Immovable Property in Pakistan as of
+                  March 2024</h2>
+                <p>Section 7E of the Income Tax Ordinance, 2001, introduced via the Finance Act of 2022, mandates
+                  taxation on deemed income stemming from immovable property located within Pakistan. Herein lies an
+                  extensive exploration of its nuances and implications.</p>
+                <br>
+                <h4>Grasping the Basics: Understanding the 7E Tax</h4>
+                <p>The crux of the 7E tax entails imposing a charge on resident individuals deemed to have accrued
+                  income equivalent to 5% of the fair market value of their capital assets, encompassing land and
+                  buildings within Pakistan. This deemed income is subject to a tax rate of 20%, effectively amounting
+                  to 1% of the property's fair market value.</p>
+                <br>
+                <h4>Navigating Exemptions and Exclusions:</h4>
+                <p>While the 7E tax may seem all-encompassing, several exemptions and exclusions provide respite to
+                  specific groups of individuals and properties.</p>
+                <br>
+                <h4>Exemption by Asset Category:</h4>
+                <ul>
+                  <li>Single-owned capital assets of a resident individual.</li>
+                  <li>Self-owned business premises where active business operations are conducted.</li>
+                  <li>Self-owned agricultural land actively utilized for agricultural purposes, excluding farmhouses and
+                    annexed land.</li>
+                  <li>Properties already taxed under existing regulations.</li>
+                </ul>
+
+                <h4>Additional Exclusions:</h4>
+                <ul>
+                  <li>Capital assets acquired within the first year, provided tax under section 236K has been duly paid.
+                  </li>
+                  <li>Assets with a total aggregate fair market value not exceeding PKR 25 million, excluding specified
+                    categories as mentioned above.</li>
+                  <li>Assets owned by various government entities, including provincial and local governments, local
+                    authorities, and development authorities.</li>
+                  <li>Assets owned by registered builders and developers under the Directorate General of Designated
+                    Non-Financial Businesses and Professions.</li>
+                </ul>
+
+                <p><strong>In essence, the 7E tax primarily focuses on deemed income from specific immovable properties,
+                    while exempting a substantial portion of assets based on ownership categories, property usage, and
+                    prevailing tax regulations. It is strongly advised to seek guidance from proficient tax
+                    professionals to navigate individual circumstances and ensure adherence to the 7E tax
+                    provisions.</strong></p>
+                <br>
+                <h4><span>March 11, 2024</span></h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Blogs Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+
+
+    <div class="footer-top bg-dark">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>MSP LAW ASSOCIATES</h3>
+            <p style="color:#fff;">
+              C-89, Gulshan-e-Hadeed, <br>
+              Phase 1-2 Extension, Malir, Karachi<br>
+              <br>
+              <strong>Phone:</strong> <a style="color:#fff;" href="tel:03323097193">03323097193</a><br>
+
+              <strong>Email:</strong> <a style="color:#fff;"
+                href="mailto:consult@primecounsels.com">consult@primecounsels.com</a><br>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right" style="color:#fff;"></i> <a class="scrollto" style="color:#fff;"
+                  href="/">Home</a>
+              </li>
+              <li><i class="bx bx-chevron-right" style="color:#fff;"></i> <a class="scrollto" style="color:#fff;"
+                  href="/#about">About
+                  us</a></li>
+              <li><i class="bx bx-chevron-right" style="color:#fff;"></i> <a class="scrollto" style="color:#fff;"
+                  href="/#practiceAreas">Practice Areas</a></li>
+              <li><i class="bx bx-chevron-right" style="color:#fff;"></i> <a class="scrollto" style="color:#fff;"
+                  href="#">Terms of
+                  service</a></li>
+              <li><i class="bx bx-chevron-right" style="color:#fff;"></i> <a class="scrollto" style="color:#fff;"
+                  href="#">Privacy
+                  policy</a></li>
+            </ul>
+          </div>
+
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Our Social Networks</h4>
+
+            <div class="social-links mt-3">
+              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom clearfix">
+      <div class="copyright">
+        © Copyright <strong><span>MSP LAW ASSOCIATES</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+        Developed by <a href="https://barqialat.tech/">Barqi Alat</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+  <a href="https://api.whatsapp.com/send?phone=+923323097193" class="whatsapp-button" id="whatsappButton">
+    <img src="{{ url_for('static', filename='img/whatsapp.png') }}" alt="WhatsApp Icon">
+
+  </a>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var whatsappButton = document.getElementById('whatsappButton');
+      window.addEventListener('scroll', function () {
+        if (window.scrollY > 100) { // Change 100 to the scroll position where you want the button to appear
+          whatsappButton.style.display = 'block';
+        } else {
+          whatsappButton.style.display = 'none';
+        }
+      });
+    });
+
+  </script>
+  <!-- Vendor JS Files -->
+  <!-- Vendor JS Files -->
+  <script src="{{ url_for('static', filename='vendor/aos/aos.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/waypoints/noframework.waypoints.js') }}"></script>
+  <script src="{{ url_for('static', filename='vendor/php-email-form/validate.js') }}"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="{{ url_for('static', filename='js/main.js')}}"></script>
+
+
+
+</body>
+
+</html>
